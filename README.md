@@ -14,7 +14,7 @@ This application helps you build a live COVID-19 dashboard which shows the curre
     - Navigate to `http://127.0.0.1:5601/`
     - Navigate to `resources/kibana-config` and import the config to Kibana `kibana management -> saved objects -> import`. Import `resources/kibana-config/COVID-dashboard.ndjson` config and you have your LIVE Dashboard up and running
 
-## Example of live COVID tracker using Kibana 
+## COVID live tracker using Kibana 
 
 ![alt text](https://github.com/Udaykiranreddy0608/covid-live-dashboard/blob/master/src/main/resources/covid.PNG?raw=true)
 
