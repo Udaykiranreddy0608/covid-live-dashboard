@@ -14,5 +14,5 @@ This application helps you build a live COVID-19 dashboard which shows the curre
 
 ## Example of Kibana dashboard 
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/Udaykiranreddy0608/covid-live-dashboard/blob/master/src/main/resources/covid.PNG?raw=true)
  
