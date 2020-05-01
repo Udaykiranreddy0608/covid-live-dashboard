@@ -1,0 +1,25 @@
+Spinning up elk docker
+------------------------
+sudo docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+
+DELETE index  -  curl -X DELETE "localhost:9200/covid?pretty"
+Loading data to ES using CURL
+=============================
+curl -H "Content-Type: application/json" -XPOST "localhost:9200/covid/_bulk?pretty&refresh" --data-binary "@covidData.json"
+----------
+{"index":{"_id":"1"}}
+{ "country" : "india", "date": "2020-1-22", "confirmed": 0, "deaths": 0, "recovered": 0 }
+{"index":{"_id":"2"}}
+{ "country" : "india", "date": "2020-1-23", "confirmed": 1, "deaths": 0, "recovered": 0 }
+{"index":{"_id":"3"}}
+{ "country" : "usa", "date": "2020-1-22", "confirmed": 7, "deaths": 2, "recovered": 4 }
+{"index":{"_id":"4"}}
+{ "country" : "usa", "date": "2020-1-23", "confirmed": 3, "deaths": 0, "recovered": 0 }
+{"index":{"_id":"5"}}
+{ "country" : "uk", "date": "2020-1-22", "confirmed": 6, "deaths": 3, "recovered": 1 }
+{"index":{"_id":"6"}}
+{ "country" : "uk", "date": "2020-1-23", "confirmed": 1, "deaths": 0, "recovered": 0 }
+----------
+
+
+
