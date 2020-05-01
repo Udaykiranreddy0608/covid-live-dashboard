@@ -18,10 +18,12 @@ This application helps you build a live COVID-19 dashboard which shows the curre
 
 ![alt text](https://github.com/Udaykiranreddy0608/covid-live-dashboard/blob/master/src/main/resources/covid.PNG?raw=true)
 
-#### Reference :
+#### Reference
 
 - ELK Docker image - https://hub.docker.com/r/sebp/elk/
 - Live COVID data provider - https://pomber.github.io/covid19/timeseries.json 
 
+#### Improvements 
 
+- We can leverage AWS data lake for COVID built and maintained by AWS - https://go.aws/covid-19-data-lake 
  
