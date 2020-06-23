@@ -26,7 +26,7 @@ public class ScheduledTasks {
 //    return builder.build();
 //  }
 
-  @Scheduled(fixedRate = 5000)
+  //@Scheduled(fixedRate = 5000)
   public void reportCurrentTime() throws IOException {
     log.info("The time is now {}", dateFormat.format(new Date()));
     final String uri = "https://pomber.github.io/covid19/timeseries.json";

@@ -20,7 +20,7 @@ dependencies {
   implementation 'org.elasticsearch.client:elasticsearch-rest-client:7.4.1'
   implementation 'org.elasticsearch:elasticsearch:7.4.1'
   implementation 'org.json:json:20190722'
-
+  compile group: 'org.apache.commons', name: 'commons-csv', version: '1.4'
   testImplementation('org.springframework.boot:spring-boot-starter-test') {
     exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
   }
